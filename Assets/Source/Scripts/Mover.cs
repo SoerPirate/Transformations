@@ -42,7 +42,7 @@ public class Mover : MonoBehaviour
         //_currentTime += Time.deltaTime;                                                                                     // [4-1] между стартом и целью в зависимости от значения (приведенного к условной 1)
         //_normalizRunningTime = _currentTime / _lerpTime;
         //transform.position = Vector3.Lerp(_startPosition, _target2, _normalizRunningTime);
-        //transform.position = Vector3.Lerp(transform.position, _target2, _normalizRunningTime);                              // [4-2] между СОБОЙ и целью в зависимости от значения (приведенного к условной 1), работает рывком совсем иначе
+        //transform.position = Vector3.Lerp(transform.position, _target2, _normalizRunningTime);                              // [4-2] между СОБОЙ и целью в зависимости от значения (приведенного к условной 1)    !!! получается с замедлением. Работает совсем иначе
 
 
         //rigidbody2D.AddForce(Vector2.up * _jumpForce, ForceMode2D.Force);                                                   // [5-1] Физика
